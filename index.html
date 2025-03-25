@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aim Trainer Game</title>
+  <style>
+    body { margin: 0; overflow: hidden; }
+    #score { position: absolute; top: 10px; left: 10px; color: white; font-size: 20px; }
+    #timer { position: absolute; top: 10px; right: 10px; color: white; font-size: 20px; }
+  </style>
+</head>
+<body>
+  <div id="score">Score: 0</div>
+  <div id="timer">Time: 60</div>
+  <!-- 使用 CDN 加载 Three.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <!-- Socket.io 客户端库（如有多人功能，可从服务器提供） -->
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
